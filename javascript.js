@@ -3,8 +3,6 @@ let computerScore = 0;
 let draw = 0;
 let rounds = 0;
 
-let Score = ['Win', 'Lose', 'Draw'];
-
 function getComputerChoice() {
     const computerChoice = ["Rock", "Paper", "Scissors"];
 
