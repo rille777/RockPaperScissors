@@ -6,19 +6,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project: Rock Paper Scissors</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="javascript.js"></script>
+  
 
 </head>
 <body>
-  <script>
-    
-   
-    
-    
-    getGame();
-   
 
+   <!--- This header part is based on the Landing Page project.   -->
+  <div class="header">
+    <div class="logo">Rock Paper Scissors</div>
+  </div>
 
-  </script>
+  
+ <!--- This is the game start title, this is also used to announce winner and loser   -->
+  <div class="part2">
+    <h1 class="title" id="winner">Please make your selection</h1>
+    <h2 class="title" id="roundResult">First to 5, wins the game</h2>
+  
+
+   <!--- This is the two boxes with player and computer results.   -->
+  
+   <div class="score-boxes">
+    <div>
+      <div class="left-boxcontainer">
+        <div class="sign" id="playaSign">?</div>
+      </div>
+      <p>Playa: <span id="playaScore">0</span></p>
+    </div> 
+
+    <div>
+      <div class="right-boxcontainer">
+        <div class="sign" id="computerSign">?</div>
+      </div>
+      <p>Computer: <span id="compScore">0</span></p>
+    </div> 
+  </div>
+
+  <!--- This is restart button once the game is finished, this button is by default hidden.   -->
+  <div class="endGame" id="end">
+    <button id="restart">Restart</button>
+  </div> 
+
+    <!--- This is the three boxes with rock paper and scissors   -->
+    <div class="buttons">
+      <div>
+        <button class="btn-three" id="rock">
+          <div class="sign">✊</div>
+        </button>
+        <p>ROCK</p>
+      </div> 
+
+      <div>
+        <button class="btn-three" id="paper">
+          <div class="sign">✋</div>
+        </button>
+        <p>PAPER</p>
+      </div> 
+
+      <div>
+        <button class="btn-three" id="scissors">
+          <div class="sign">✌</div>
+        </button>
+        <p>SCISSORS</p>
+      </div> 
+      <script src="javascript.js"></script>
+      <script>startGame();</script>
 </body>
 </html>
